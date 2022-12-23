@@ -137,4 +137,13 @@ class App {
 
 window.onload = () => {
     new App();
+
+    const audioElement = new Audio('./music/music1.mp3');
+    audioElement.addEventListener("loadeddata", () => {
+        let duration = audioElement.duration;
+        audioElement.loop = true;
+        audioElement.play();
+    });
+    //audio.play();
+    //audioElement.loop = true;
 }
