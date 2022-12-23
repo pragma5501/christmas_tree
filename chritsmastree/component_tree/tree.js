@@ -13,8 +13,8 @@ export class Tree{
         this.make_star();
     }
     set_tree_information() {
-        this.tree_radius_top = 10;
-        this.tree_radius_bottom = 70;
+        this.tree_radius_top = this.stageWidth/140;
+        this.tree_radius_bottom = this.stageWidth/20;
     }
     make_pillar() {
         this.sector = {}
